@@ -10,23 +10,41 @@ function mainpage() {
     include "./include/layout.php";
 }
 function gatospage() {
-    $banner = "./images/allanimals.jpg";
+    global  $items;
+    $banner = "./images/banner_cat.jpg";
     $title = "gatos";
-    $content = $items;
+    $content = array_filter($items, function($animal){
+        return $animal['type'] == "gato";
+    });
 
     include "./include/layout.php";
 }
 function cachorrospage() {
-    $banner = "./images/allanimals.jpg";
+    global  $items;
+    $banner = "./images/banner_dog.jpg";
     $title = "cachorros";
-    $content = $items;
+    $content = array_filter($items, function($animal){
+        return $animal['type'] == "cachorro";
+    });
 
     include "./include/layout.php";
 }
 function peixespage() {
-    $banner = "./images/allanimals.jpg";
+    global  $items;
+    $banner = "./images/banner_fish.jpg";
     $title = "peixes";
-    $content = $items;
+    $content =array_filter($items, function($animal){
+        return $animal['type'] == "peixe";
+    });
+
+    include "./include/layout.php";
+}
+function pesquisapage() {
+    global  $items;
+    $nome = $_GET['nome'] ?? "";
+    $content =array_filter($items, function($animal) USE($nome){
+        return $animal['name'] == $nome;
+    });
 
     include "./include/layout.php";
 }
