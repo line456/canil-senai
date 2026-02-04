@@ -1,8 +1,16 @@
 <?php 
 include "./data/animals.php";
 
+$active = [
+    "main" => "",
+    "cachorros" => "",
+    "gatos" => "",
+    "peixes" => "",
+];
+
 function mainpage() {
-    global  $items;
+    global  $items, $active;
+    $active ['main'] = "active";
     $banner = "./images/allanimals.jpg";
     $title = "Todo os animais";
     $content = $items;
@@ -10,7 +18,8 @@ function mainpage() {
     include "./include/layout.php";
 }
 function gatospage() {
-    global  $items;
+    global  $items, $active;
+    $active ['gatos'] = "active";
     $banner = "./images/banner_cat.jpg";
     $title = "gatos";
     $content = array_filter($items, function($animal){
@@ -20,7 +29,8 @@ function gatospage() {
     include "./include/layout.php";
 }
 function cachorrospage() {
-    global  $items;
+    global  $items, $active;
+    $active ['cachorros'] = "active";
     $banner = "./images/banner_dog.jpg";
     $title = "cachorros";
     $content = array_filter($items, function($animal){
@@ -30,7 +40,8 @@ function cachorrospage() {
     include "./include/layout.php";
 }
 function peixespage() {
-    global  $items;
+    global  $items, $active;
+    $active ['peixes'] = "active";
     $banner = "./images/banner_fish.jpg";
     $title = "peixes";
     $content =array_filter($items, function($animal){
