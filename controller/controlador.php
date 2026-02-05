@@ -6,6 +6,8 @@ $active = [
     "cachorros" => "",
     "gatos" => "",
     "peixes" => "",
+    "passaros" =>"",
+    "cobras" =>"",
 ];
 
 function mainpage() {
@@ -50,6 +52,31 @@ function peixespage() {
 
     include "./include/layout.php";
 }
+
+function passarospage() {
+    global  $items, $active;
+    $active ['passaros'] = "active";
+    $banner = "https://www.shutterstock.com/image-photo/horizontal-banner-two-beautiful-colorful-260nw-2669604365.jpg";
+    $title = "passaros";
+    $content =array_filter($items, function($animal){
+        return $animal['type'] == "passaro";
+    });
+
+    include "./include/layout.php";
+}
+
+function cobraspage() {
+    global  $items, $active;
+    $active ['cobras'] = "active";
+    $banner = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkY8HqGYHwX7UBbEeaj3Ooqh9QDqg3AhneHQ&s";
+    $title = "cobras";
+    $content =array_filter($items, function($animal){
+        return $animal['type'] == "cobra";
+    });
+
+    include "./include/layout.php";
+}
+
 function pesquisapage() {
     global  $items;
     $nome = $_GET['nome'] ?? "";

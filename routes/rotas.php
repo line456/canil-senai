@@ -20,6 +20,12 @@ else if ($url == "/canil/peixes"){
 else if ($url == "/canil/pesquisa"){
     pesquisapage();
 }
+else if ($url == "/canil/passaros"){
+    passarospage();
+}
+else if ($url == "/canil/cobras"){
+    cobraspage();
+}
 else {
     echo "404 not found";
 }

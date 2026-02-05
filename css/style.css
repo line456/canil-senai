@@ -82,7 +82,7 @@ h2 {
     font-weight: bold;
     text-align: center;
 }
-
+.item
 .no-list {
     margin-bottom: 50px;
 }
@@ -96,8 +96,9 @@ h2 {
     color: var(--lightbg);
 }
 .item--image {
-    width: 100%;
-    height: auto;
+    width: 204px;
+    object-position: cover;
+    height: 204px;
     border-radius: 5px;
 }
 .item--name {

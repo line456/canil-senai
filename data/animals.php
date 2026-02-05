@@ -120,7 +120,99 @@ $items = [
         'color' => 'preto',
         'genre' => 'masculino',
         'type'  => 'peixe'
-    ]
+    ],
+    [
+        'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4IanQjA16tT4GzyF5GIvWmrlu8_zpPeOMA&s',
+        'name'  => 'arara azul',
+        'color' => 'azul e amarelo',
+        'genre' => 'masculino',
+        'type'  => 'passaro'
+    ],
+    [
+        'image' => 'https://s2.glbimg.com/UqNVazeRiuskd2w9I2GqKtmBEM0=/e.glbimg.com/og/ed/f/original/2015/01/29/oryzoborus_angolensis_-campina_grande_do_sul_paranaben_tavener_from_curitiba_brazil.jpg',
+        'name'  => 'curio',
+        'color' => 'preto',
+        'genre' => 'masculino',
+        'type'  => 'passaro'
+    ],
+    
+    [
+        'image' => 'https://polipet.fbitsstatic.net/media/papagaiolateral3.png?v=202504171538',
+        'name'  => 'papagaio verdadeiro',
+        'color' => 'verde',
+        'genre' => 'feminino',
+        'type'  => 'passaro'
+    ],
+    
+        [
+        'image' => 'https://www.zoo.df.gov.br/documents/26926051/26947335/Cardeal-do-nordeste-Marco-Marcos.jpg',
+        'name'  => 'cardeal-do-nordeste',
+        'color' => 'preto, vermelho e branco',
+        'genre' => 'masculino',
+        'type'  => 'passaro'
+    ],
+    
+    [
+        'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXsS4Q6o3f67NzTNkUF-Kt_ccmw2LUyhvyzA&s',
+        'name'  => 'canário-da-terra',
+        'color' => 'amarelo',
+        'genre' => 'feminino',
+        'type'  => 'passaro'
+    ],
+    [
+        'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFeumsUh_bYVF0hyNS7DPqKyXM3w4Kb0Wl3w&s',
+        'name'  => 'periquito-verde',
+        'color' => 'verde',
+        'genre' => 'masculino',
+        'type'  => 'passaro'
+    ],
+    [
+        'image' => 'https://upload.wikimedia.org/wikipedia/commons/7/7f/Large-billed_Seed-Finch_-_Darien_-_Panama_%2848444795082%29_%28cropped%29.jpg',
+        'name'  => 'bicudo-do-norte',
+        'color' => 'preto',
+        'genre' => 'feminino',
+        'type'  => 'passaro'
+    ],
+    
+    [
+        'image' => 'https://www.thesprucepets.com/thmb/6GGMs0w4Xf1nCvNN6UN4Z2yGHOE=/3888x0/filters:no_upscale():strip_icc()/corn-snake-from-the-lower-florida-keys-530475947-588124bc5f9b58bdb3ec9f93.jpg',
+        'name'  => 'corn snake',
+        'color' => 'vermelho e amarelo',
+        'genre' => 'feminino',
+        'type'  => 'cobra'
+    ],
+    
+    [
+        'image' => 'https://repteisbrasil.com.br/11224-large_default/venda-de-cobra-jiboia-legalizada-criadouro.jpg',
+        'name'  => 'jiboia',
+        'color' => 'amarelo e marrom',
+        'genre' => 'masculino',
+        'type'  => 'cobra'
+    ],
+    [
+        'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5MIZ17UtW5MwxoWRC7nNGQKcGvdjSjH_DvQ&s',
+        'name'  => 'piton bola',
+        'color' => 'amarelo e branca',
+        'genre' => 'masculino',
+        'type'  => 'cobra'
+    ],
+    [
+        'image' => 'https://predadora.com.br/media/posts/67/WhatsApp-Image-2025-01-08-at-00.14.34.jpeg',
+        'name'  => 'jiboia arco-íris',
+        'color' => 'cinza com reflexos coloridos',
+        'genre' => 'feminino',
+        'type'  => 'cobra'
+    ],
+    
+    [
+        'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4VU8Syc6g3qyDItTFmqqAmQT_LXn6vZM3Gw&s',
+        'name'  => 'falsa-carol',
+        'color' => 'preto e laranja',
+        'genre' => 'feminino',
+        'type'  => 'cobra'
+    ],
+
+
 ];
 
 
