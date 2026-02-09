@@ -1,5 +1,6 @@
 <?php 
 include "./data/animals.php";
+include "./model/models.php";
 
 $active = [
     "main" => "",
@@ -15,7 +16,7 @@ function mainpage() {
     $active ['main'] = "active";
     $banner = "./images/allanimals.jpg";
     $title = "Todo os animais";
-    $content = $items;
+    $content = pegartodos($items);
 
     include "./include/layout.php";
 }
@@ -24,9 +25,8 @@ function gatospage() {
     $active ['gatos'] = "active";
     $banner = "./images/banner_cat.jpg";
     $title = "gatos";
-    $content = array_filter($items, function($animal){
-        return $animal['type'] == "gato";
-    });
+    $lista = pegartodos($items);
+    $content = pegartipo("gato",$lista);
 
     include "./include/layout.php";
 }
@@ -35,9 +35,9 @@ function cachorrospage() {
     $active ['cachorros'] = "active";
     $banner = "./images/banner_dog.jpg";
     $title = "cachorros";
-    $content = array_filter($items, function($animal){
-        return $animal['type'] == "cachorro";
-    });
+    $lista = pegartodos($items);
+    $content = pegartipo("cachorro",$lista);
+
 
     include "./include/layout.php";
 }
@@ -46,9 +46,9 @@ function peixespage() {
     $active ['peixes'] = "active";
     $banner = "./images/banner_fish.jpg";
     $title = "peixes";
-    $content =array_filter($items, function($animal){
-        return $animal['type'] == "peixe";
-    });
+    $lista = pegartodos($items);
+    $content = pegartipo("peixe",$lista);
+
 
     include "./include/layout.php";
 }
@@ -58,9 +58,9 @@ function passarospage() {
     $active ['passaros'] = "active";
     $banner = "https://www.shutterstock.com/image-photo/horizontal-banner-two-beautiful-colorful-260nw-2669604365.jpg";
     $title = "passaros";
-    $content =array_filter($items, function($animal){
-        return $animal['type'] == "passaro";
-    });
+    $lista = pegartodos($items);
+    $content = pegartipo("passaro",$lista);
+
 
     include "./include/layout.php";
 }
@@ -70,9 +70,9 @@ function cobraspage() {
     $active ['cobras'] = "active";
     $banner = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkY8HqGYHwX7UBbEeaj3Ooqh9QDqg3AhneHQ&s";
     $title = "cobras";
-    $content =array_filter($items, function($animal){
-        return $animal['type'] == "cobra";
-    });
+    $lista = pegartodos($items);
+    $content = pegartipo("cobra",$lista);
+
 
     include "./include/layout.php";
 }
@@ -80,11 +80,11 @@ function cobraspage() {
 function pesquisapage() {
     global  $items;
     $nome = $_GET['nome'] ?? "";
-    $content =array_filter($items, function($animal) USE($nome){
-        return $animal['name'] == $nome;
-    });
+    $lista = pegartodos($items);
+    $content = pegarpelonome($items, $lista);
 
     include "./include/layout.php";
+
 }
 ?>
 
